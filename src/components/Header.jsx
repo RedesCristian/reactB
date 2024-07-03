@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./Header.module.css";
+import logo from "../images/logo/logo.png"; 
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <h1 className={styles.title}>Barbershop</h1>
+      <img src={logo} alt="Barbershop Logo" className={styles.logo} /> 
       <nav className={styles.nav}>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#team">Our Team</a>
+        <a href="#services">Servicii</a>
+        <a href="#about">Poveste</a>
+        <a href="#team">Echipa</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
