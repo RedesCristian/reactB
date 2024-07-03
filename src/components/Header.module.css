@@ -11,6 +11,10 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+.logoImage {
+  display: flex;
+  gap: 20px;
+}
 
 .nav {
   display: flex;
