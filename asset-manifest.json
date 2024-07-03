@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/reactB/static/css/main.076d71be.css",
-    "main.js": "/reactB/static/js/main.143aaaaa.js",
+    "main.css": "/reactB/static/css/main.45161d58.css",
+    "main.js": "/reactB/static/js/main.c473604a.js",
+    "static/media/haircutone.jpg": "/reactB/static/media/haircutone.136992e8ef1101b46148.jpg",
+    "static/media/haircuttwo.jpg": "/reactB/static/media/haircuttwo.bdf507b3540f2e52d39e.jpg",
+    "static/media/haircutthree.jpg": "/reactB/static/media/haircutthree.f122d0e0b851a10e9fbe.jpg",
+    "static/media/haircutfor.png": "/reactB/static/media/haircutfor.f2e3cac876e5db069963.png",
     "static/media/logo (1).png": "/reactB/static/media/logo (1).f455602d82a5b633d6e7.png",
     "index.html": "/reactB/index.html",
-    "main.076d71be.css.map": "/reactB/static/css/main.076d71be.css.map",
-    "main.143aaaaa.js.map": "/reactB/static/js/main.143aaaaa.js.map"
+    "main.45161d58.css.map": "/reactB/static/css/main.45161d58.css.map",
+    "main.c473604a.js.map": "/reactB/static/js/main.c473604a.js.map"
   },
   "entrypoints": [
-    "static/css/main.076d71be.css",
-    "static/js/main.143aaaaa.js"
+    "static/css/main.45161d58.css",
+    "static/js/main.c473604a.js"
   ]
 }
