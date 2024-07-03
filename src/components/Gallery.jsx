@@ -1,12 +1,16 @@
-import React from "react";
-import styles from "./Gallery.module.css";
+import React from 'react';
+import styles from './Gallery.module.css';
+import haircutone from '../images/haircutone.jpg';
+import haircuttwo from '../images/haircuttwo.jpg';
+import haircutthree from '../images/haircutthree.jpg';
+import haircutfor from '../images/haircutfor.png';
 
 const galleryData = [
-  { imgSrc: "path_to_image1.jpg", description: "Haircut Style 1" },
-  { imgSrc: "path_to_image2.jpg", description: "Haircut Style 2" },
-  { imgSrc: "path_to_image3.jpg", description: "Haircut Style 3" },
-  { imgSrc: "path_to_image4.jpg", description: "Haircut Style 4" },
-  { imgSrc: "path_to_image5.jpg", description: "Haircut Style 5" },
+  { imgSrc: haircutone, description: 'Haircut Style 1' },
+  { imgSrc: haircuttwo, description: 'Haircut Style 2' },
+  { imgSrc: haircutthree, description: 'Haircut Style 3' },
+  { imgSrc: haircutfor, description: 'Haircut Style 4' },
+  { imgSrc: 'path_to_image5.jpg', description: 'Haircut Style 5' },
   // Adaugă mai multe imagini după cum este necesar
 ];
 
