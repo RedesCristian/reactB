@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/reactB/static/css/main.69f322ad.css",
-    "main.js": "/reactB/static/js/main.95d2ce57.js",
+    "main.css": "/reactB/static/css/main.e023758c.css",
+    "main.js": "/reactB/static/js/main.f54768e0.js",
     "static/media/character1.png": "/reactB/static/media/character1.056e78a4f381db741237.png",
     "static/media/haircutone.jpg": "/reactB/static/media/haircutone.136992e8ef1101b46148.jpg",
     "static/media/haircuttwo.jpg": "/reactB/static/media/haircuttwo.bdf507b3540f2e52d39e.jpg",
     "static/media/haircutthree.jpg": "/reactB/static/media/haircutthree.f122d0e0b851a10e9fbe.jpg",
     "static/media/haircutfor.png": "/reactB/static/media/haircutfor.f2e3cac876e5db069963.png",
     "static/media/logo (1).png": "/reactB/static/media/logo (1).f455602d82a5b633d6e7.png",
+    "static/media/frame.png": "/reactB/static/media/frame.88c3b91002e37685127a.png",
     "static/media/character2.png": "/reactB/static/media/character2.815a920a70a27cf21712.png",
     "index.html": "/reactB/index.html",
-    "main.69f322ad.css.map": "/reactB/static/css/main.69f322ad.css.map",
-    "main.95d2ce57.js.map": "/reactB/static/js/main.95d2ce57.js.map"
+    "main.e023758c.css.map": "/reactB/static/css/main.e023758c.css.map",
+    "main.f54768e0.js.map": "/reactB/static/js/main.f54768e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.69f322ad.css",
-    "static/js/main.95d2ce57.js"
+    "static/css/main.e023758c.css",
+    "static/js/main.f54768e0.js"
   ]
 }
