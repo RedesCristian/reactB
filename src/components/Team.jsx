@@ -2,8 +2,7 @@ import React from "react";
 import styles from "./Team.module.css";
 import character1 from "../images/team/character1.png";
 import character2 from "../images/team/character2.png";
-
-
+import frameSVG from "../images/team/frames/frame.png";
 const teamData = [
   {
     name: "John Doe",
@@ -17,30 +16,83 @@ const teamData = [
     imgSrc: character2,
     bio: "Jane is a highly skilled barber with a passion for styling.",
   },
-  // Adaugă mai mulți membri ai echipei după cum este necesar
+  {
+    name: "Jane Smith",
+    position: "Senior Barber",
+    imgSrc: character2,
+    bio: "Jane is a highly skilled barber with a passion for styling.",
+  },
+  {
+    name: "Jane Smith",
+    position: "Senior Barber",
+    imgSrc: character2,
+    bio: "Jane is a highly skilled barber with a passion for styling.",
+  },
+  {
+    name: "Jane Smith",
+    position: "Senior Barber",
+    imgSrc: character2,
+    bio: "Jane is a highly skilled barber with a passion for styling.",
+  },
+  {
+    name: "Jane Smith",
+    position: "Senior Barber",
+    imgSrc: character2,
+    bio: "Jane is a highly skilled barber with a passion for styling.",
+  },
 ];
 
 const Team = () => {
   return (
     <section id="team" className={styles.section}>
       <h2>Meet Our Team</h2>
-      <div className={styles.cards}>
-        {teamData.map((member, index) => (
-          <div key={index} className={styles.card}>
-            <div className={styles.cardInner}>
-              <div className={styles.cardFront}>
-                <img src={member.imgSrc} alt={member.name} />
-                <h3>{member.name}</h3>
-                <p>{member.position}</p>
-              </div>
-              <div className={styles.cardBack}>
-                <h3>{member.name}</h3>
-                <p>{member.position}</p>
-                <p>{member.bio}</p>
+      <div className={styles.mainCardContainer}>
+        {/* Filtrăm și afișăm cardul pentru John Doe */}
+        {teamData
+          .filter((member) => member.name === "John Doe")
+          .map((member, index) => (
+            <div key={index} className={`${styles.card} ${styles.mainCard}`}>
+              <div className={styles.cardInner}>
+                {/* Cardul frontal */}
+                <div className={styles.cardFront}>
+                  {/* Imaginea de profil */}
+                  <div
+                    className={styles.profilePicture}
+                    style={{ backgroundImage: `url(${member.imgSrc})` }}
+                  ></div>
+                  {/* SVG-ul pentru ramă */}
+                  <img className={styles.frame} src={frameSVG} alt="Frame" />
+                  {/* Informații despre membrul echipei */}
+                  <h3>{member.name}</h3>
+                  <p>{member.position}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+      </div>
+      <div className={styles.cards}>
+        {/* Filtrăm și afișăm cardurile pentru alți membri ai echipei */}
+        {teamData
+          .filter((member) => member.name !== "John Doe")
+          .map((member, index) => (
+            <div key={index} className={styles.card}>
+              <div className={styles.cardInner}>
+                {/* Cardul frontal */}
+                <div className={styles.cardFront}>
+                  {/* Imaginea de profil */}
+                  <div
+                    className={styles.profilePicture}
+                    style={{ backgroundImage: `url(${member.imgSrc})` }}
+                  ></div>
+                  {/* SVG-ul pentru ramă */}
+                  <img className={styles.frame} src={frameSVG} alt="Frame" />
+                  {/* Informații despre membrul echipei */}
+                  <h3>{member.name}</h3>
+                  <p>{member.position}</p>
+                </div>
+              </div>
+            </div>
+          ))}
       </div>
     </section>
   );
