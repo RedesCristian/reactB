@@ -1,6 +1,297 @@
-.footer {
-  background-color: #333;
+/* Ascunde textul numelor */
+.socialItem span {
+  display: none;
+}
+
+/* Stiluri pentru fiecare iconită specifică */
+
+.socialItem.facebook a {
+  color: #3b5998; /* Culoarea specifică pentru Facebook */
+}
+
+.socialItem.instagram a {
+  color: #bc2a8d; /* Culoarea specifică pentru Instagram */
+}
+
+.socialItem.google a {
+  color: #dd4b39; /* Culoarea specifică pentru Google */
+}
+
+.socialItem.whatsapp a {
+  color: #4dc247; /* Culoarea specifică pentru WhatsApp */
+}
+
+.socialItem.tiktok a {
+  color: #69c9d0; /* Culoarea specifică pentru TikTok */
+}
+
+/* Stiluri pentru rețelele sociale la hover */
+
+.socialItem.facebook:hover {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+}
+
+.socialItem.facebook:hover a {
+  color: #3b5998; /* Culoarea specifică pentru Facebook la hover */
+}
+
+.socialItem.instagram:hover {
+  border-color: #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+}
+
+.socialItem.instagram:hover a {
+  color: #bc2a8d; /* Culoarea specifică pentru Instagram la hover */
+}
+
+.socialItem.google:hover {
+  border-color: #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+}
+
+.socialItem.google:hover a {
+  color: #dd4b39; /* Culoarea specifică pentru Google la hover */
+}
+
+.socialItem.whatsapp:hover {
+  border-color: #4dc247;
+  box-shadow: 0 0 15px #4dc247;
+}
+
+.socialItem.whatsapp:hover a {
+  color: #4dc247; /* Culoarea specifică pentru WhatsApp la hover */
+}
+
+.socialItem.tiktok:hover {
+  border: 5px solid #69c9d0;
+  box-shadow: 0 0 15px #69c9d0;
+}
+
+.socialItem.tiktok:hover a {
+  color: #69c9d0; /* Culoarea specifică pentru TikTok la hover */
+}
+
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
   color: #fff;
-  padding: 1rem;
+  padding: 50px;
+}
+
+.logoFooter {
+  width: 135px;
+  height: auto;
+  margin-left: 80px;
+}
+
+.descriptionFooter {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #838282;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.containerContact {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contactDecoration {
+  color: #fff;
+  text-decoration: none;
+  font-size: 110%;
+  display: none;
+}
+
+.contactName {
+  color: #eee347;
+}
+
+.scheduleList {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.icon:hover .scheduleList {
+  display: block;
+  position: fixed;
+  margin-right: 50px;
+  margin-top: -20px;
+  margin-left: -60px;
+}
+
+.scheduleList li {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.scheduleList li strong {
+  margin-right: 5px;
+}
+
+.aspectContact div {
+  margin-bottom: 20px;
+}
+
+.aspectContact {
+  column-count: 1;
+  column-gap: 75px;
+  margin-right: 110px;
+  font-size: 110%;
   text-align: center;
+}
+
+.aspectContact:last-child {
+  margin-right: 100px;
+}
+
+.footerBottom {
+  border-top: 1px solid #ccc;
+  color: #fff;
+  background-color: #000000;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLeft {
+  flex: 1;
+}
+
+.footerRight {
+  display: flex;
+}
+
+.socialMedia {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.socialMedia li {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #d8e2dc;
+  transition: all 0.5s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fas {
+  color: white;
+}
+
+.fa-brands {
+  color: #d8e2dc;
+  transition: all 0.5s ease;
+}
+
+.fa-brands,
+.fab {
+  color: white;
+}
+.socialItem {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #d8e2dc;
+  transition: all 0.5s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Adaugă pentru a gestiona elementul span */
+}
+
+.socialItem span {
+  display: none; /* Ascunde textul initial */
+  position: absolute;
+  bottom: -25px; /* Ajustează poziția textului */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+.socialItem a {
+  text-decoration: none; /* Elimină sublinierea */
+  color: #d8e2dc; /* Culorile normale ale iconițelor */
+}
+
+
+
+/* Stiluri pentru rețelele sociale */
+
+.facebook:hover {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+}
+
+.facebook:hover .fa-facebook-f {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+}
+
+.instagram:hover {
+  border-color: #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+}
+
+.instagram:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+}
+
+.google:hover {
+  border-color: #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+}
+
+.google:hover .fa-google {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+}
+
+.whatsapp:hover {
+  border-color: #4dc247;
+  box-shadow: 0 0 15px #4dc247;
+}
+
+.whatsapp:hover .fa-whatsapp {
+  color: #4dc247;
+  text-shadow: 0 0 15px #4dc247;
+}
+
+.tiktok:hover {
+  border: 5px solid #69c9d0;
+  box-shadow: 0 0 15px #69c9d0;
+}
+
+.tiktok:hover .fa-tiktok {
+  color: #69c9d0;
+  text-shadow: 0 0 15px #69c9d0;
 }

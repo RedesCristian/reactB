@@ -44,11 +44,11 @@
 }
 
 .card:hover .cardInner {
-  transform: translateZ(30px);
+  transform: translateZ(20px);
 }
 
 .cardFront {
-  position: relative; /* Schimbăm la 'relative' pentru a poziționa corect SVG-ul */
+  position: relative; 
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -75,12 +75,13 @@
 .frame {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: -50px;
+  width: 150%;
   height: 100%;
   z-index: -1; /* Asigură că SVG-ul este în spatele imaginii */
   pointer-events: none; /* Face SVG-ul invizibil pentru evenimentele de mouse/touch */
   color: var( --accent-color);
+  opacity: 0.3;
   
 }
 

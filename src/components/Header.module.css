@@ -1,38 +1,43 @@
 .header {
-  background: linear-gradient(135deg, #6e7f80 0%, #95a5a6 100%); /* Gradient */
+ 
+  background: linear-gradient(180deg, rgba(12, 12, 14, 1) 53%, rgba(12, 12, 14, 0.8) 75%, rgba(12, 12, 14, 0) 100%);
   color: #ffffff;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 10;
+  z-index: 3;  
+   width: 85%;
+  max-width: 85%; 
+  height: auto; 
+  margin: 0 auto;
 }
 
-.header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.2); /* Subtle overlay for depth */
-  z-index: -1;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 .logoImage {
+  z-index: 2;
   display: flex;
-  gap: 20px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .nav {
   display: flex;
   gap: 1rem;
+  margin-top: 2.5rem;
+  
+}
+
+.navLeft {
+  margin-right: auto; /* Push to the left */
+  margin-left: 5rem;
+  gap: 6rem;
+}
+
+.navRight {
+  margin-left: auto; /* Push to the right */
+  margin-right: 5rem;
+  gap: 6rem;
 }
 
 .nav a {
@@ -40,23 +45,10 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease;
+  position: relative; /* Needed for absolute positioning of pseudo-element */
 }
 
 .nav a:hover {
   background-color: #555;
   border-radius: 4px;
-}
-
-.bookButton {
-  background-color: #ff6347;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border-radius: 4px;
-}
-
-.bookButton:hover {
-  background-color: #e55337;
 }

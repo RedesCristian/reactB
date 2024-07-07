@@ -1,8 +1,10 @@
 @import-normalize; /* bring in normalize.css styles */
+@import '@fortawesome/fontawesome-free/css/all.css';
 :root {
   --main-bg-color: #292525; /* Fundalul principal (gri deschis) */
   --accent-color: #9c7708; /* Galben accentuat */
   --text-color: #e2dada; /* Culoare pentru text (negru) */
+  --backround-color:#0c0c0e;
 }
 body {
   margin: 0;
@@ -11,7 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+background-color: var(--backround-color);
 }
 
 code {
