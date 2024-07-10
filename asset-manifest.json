@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/reactB/static/css/main.d1419e7e.css",
-    "main.js": "/reactB/static/js/main.7b6e8f16.js",
+    "main.css": "/reactB/static/css/main.4717033d.css",
+    "main.js": "/reactB/static/js/main.0b5de914.js",
     "static/media/character1.png": "/reactB/static/media/character1.056e78a4f381db741237.png",
     "static/media/backround1.png": "/reactB/static/media/backround1.5ce683b205901e088a7c.png",
     "static/media/haircutone.jpg": "/reactB/static/media/haircutone.136992e8ef1101b46148.jpg",
     "static/media/haircuttwo.jpg": "/reactB/static/media/haircuttwo.bdf507b3540f2e52d39e.jpg",
     "static/media/haircutthree.jpg": "/reactB/static/media/haircutthree.f122d0e0b851a10e9fbe.jpg",
-    "static/media/haircutfor.png": "/reactB/static/media/haircutfor.f2e3cac876e5db069963.png",
+    "static/media/haircutfor.jpg": "/reactB/static/media/haircutfor.11f452c9d287b45a466c.jpg",
     "static/media/fa-solid-900.ttf": "/reactB/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/fa-brands-400.ttf": "/reactB/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
     "static/media/logo.png": "/reactB/static/media/logo.f455602d82a5b633d6e7.png",
     "static/media/fa-solid-900.woff2": "/reactB/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
+    "static/media/haircutfive.jpg": "/reactB/static/media/haircutfive.e3156da1acb0e3b0cc8e.jpg",
     "static/media/fa-brands-400.woff2": "/reactB/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
     "static/media/character2.png": "/reactB/static/media/character2.815a920a70a27cf21712.png",
     "static/media/frame.png": "/reactB/static/media/frame.d0c9fc6f9de37502bf7c.png",
@@ -20,11 +21,11 @@
     "static/media/fa-v4compatibility.ttf": "/reactB/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/fa-v4compatibility.woff2": "/reactB/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/reactB/index.html",
-    "main.d1419e7e.css.map": "/reactB/static/css/main.d1419e7e.css.map",
-    "main.7b6e8f16.js.map": "/reactB/static/js/main.7b6e8f16.js.map"
+    "main.4717033d.css.map": "/reactB/static/css/main.4717033d.css.map",
+    "main.0b5de914.js.map": "/reactB/static/js/main.0b5de914.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1419e7e.css",
-    "static/js/main.7b6e8f16.js"
+    "static/css/main.4717033d.css",
+    "static/js/main.0b5de914.js"
   ]
 }
