@@ -8,78 +8,48 @@
   margin-bottom: 2rem;
 }
 
-.contactInfo {
+.mapContainer {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px; /* Increased width */
+  height: 400px; /* Defined height for better cover effect */
 }
 
-.map {
-  flex: 1;
-  min-width: 300px;
-  height: 300px;
-}
-
-.details {
-  flex: 1;
-  min-width: 300px;
-}
-
-.details h3 {
-  margin-bottom: 1rem;
-}
-
-.details p {
-  margin: 0.5rem 0;
-}
-
-.hours {
-  margin-top: 1rem;
-}
-
-.hours table {
+.mapImage {
   width: 100%;
-  border-collapse: collapse;
+  height: 100%;
+  object-fit: cover; /* Cover effect */
+  border-radius: 8px;
 }
 
-.hours th,
-.hours td {
-  border: 1px solid #ddd;
-  padding: 0.5rem;
-  text-align: center;
+.mapIcon {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  width: 90px; /* Increased size */
+  height: 90px; /* Increased size */
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.5; /* Set initial opacity */
+  transition: opacity 0.3s, box-shadow 0.3s; /* Smooth transition */
+  z-index: 2; /* Ensure icon is above overlay */
 }
 
-form {
-  margin-top: 2rem;
+.mapIcon:hover {
+  opacity: 1; /* Full opacity on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
-form div {
-  margin-bottom: 1rem;
-}
-
-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-form button {
-  padding: 0.5rem 1rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #555;
+.mapIcon img {
+  width: 60px; /* Adjusted size */
+  height: 60px; /* Adjusted size */
 }
